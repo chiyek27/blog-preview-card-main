@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px; 
+      text-align: center;
+      margin-top: 22px;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%); 
+    }
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+      font-family: 'Figtree';
+      src: url('./assets/fonts/static/Figtree-Medium.ttf') format('ttf2'),
+          url('./assets/fonts/static/Figtree-Medium.ttf') format('ttf');
+      font-weight: 400;
+      font-style: normal;
+    }
+    body {
+      font-family: 'Figtree', sans-serif;
+      background-color: hsl(47, 88%, 63%);
+      color: hsl(0, 0%, 7%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 300vh;
+      font-size: large;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 700; /* bold */
+      margin: 20px 0;
+    }  
+    .content {
+      background-color: hsl(0, 0%, 100%);
+      padding: 30px;
+      border: 1px solid hsl(0, 0%, 7%);
+      border-radius: 30px;
+      box-shadow: 10px 10px 0 hsl(0, 0%, 7%), 0 8px 24px rgba(0,0,0,.18);
+      width: max-content; 
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+    .avatar {
+      align-items: center;
+      display: flex;
+      margin-top: 20px;
+    flex-direction: row;
+    }
+    p {
+      color: hsl(0, 0%, 42%);
+    }
+    .tag {
+      background-color: hsl(47, 88%, 63%);
+      font-weight: bold;
+      padding: 10px;
+      width: inherit;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <img src="./assets/images/illustration-article.svg">
+    <div class="tag">Learning</div>
+    <span>Published 21 Dec 2023</span>
+    <h3>HTML & CSS foundations</h3>
+
+    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+    <div class="avatar">
+      <div><img src="./assets/images/image-avatar.webp" style="width: 50px;"></div>
+      <div style="margin-left: 10px;"><h4>Greg Hooper</h4></div>
+    </div>
+  </div>
+  <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Chiyek27</a>.
+  </div>
+</body>
+</html>
